@@ -1,0 +1,17 @@
+Dancingfinger Skin Info file
+v1
+
+[mapping:info]
+creator:hotmandu
+
+name:Bit Style
+nameUnicode:Bit Style
+
+[mapping:note_type]
+
+; default combo colors
+comboColors:(255,22,22)/(22,255,22)/(22,22,255)
+
+; image_setting (currently all images are mid-centered)
+;notecenter:center
+;<top-right>
