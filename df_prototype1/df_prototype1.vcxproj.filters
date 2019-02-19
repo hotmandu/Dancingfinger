@@ -13,18 +13,80 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="소스 파일\beatplay">
+      <UniqueIdentifier>{7ffb64e4-2f0c-41af-90ad-6b880d11b736}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\beatplay">
+      <UniqueIdentifier>{2a75755f-7665-4b61-bf63-2c6fc45befb0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\_test">
+      <UniqueIdentifier>{d47b70e2-943b-4573-844d-a713db1f55b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\stb">
+      <UniqueIdentifier>{81846cde-cae5-435d-abd8-1717575a7add}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GLSL Files">
+      <UniqueIdentifier>{2037ac58-af34-4995-93a8-f84fd67c3870}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h">
       <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="beatplay\file_reader.hpp">
+      <Filter>헤더 파일\beatplay</Filter>
+    </ClInclude>
+    <ClInclude Include="beatplay\beatplay_core.hpp">
+      <Filter>헤더 파일\beatplay</Filter>
+    </ClInclude>
+    <ClInclude Include="beatplay\beatparser_v1.hpp">
+      <Filter>헤더 파일\beatplay</Filter>
+    </ClInclude>
+    <ClInclude Include="_test\glHelperA.hpp">
+      <Filter>소스 파일\_test</Filter>
+    </ClInclude>
+    <ClInclude Include="_test\console_A.hpp">
+      <Filter>소스 파일\_test</Filter>
+    </ClInclude>
+    <ClInclude Include="_test\GL_A.hpp">
+      <Filter>소스 파일\_test</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="programEntry.cpp">
+    <ClCompile Include="program_entry.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="glad.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="beatplay\beatparser_v1.cpp">
+      <Filter>소스 파일\beatplay</Filter>
+    </ClCompile>
+    <ClCompile Include="beatplay\beatplay_core.cpp">
+      <Filter>소스 파일\beatplay</Filter>
+    </ClCompile>
+    <ClCompile Include="beatplay\file_reader.cpp">
+      <Filter>소스 파일\beatplay</Filter>
+    </ClCompile>
+    <ClCompile Include="stb\stb_image.cpp">
+      <Filter>소스 파일\stb</Filter>
+    </ClCompile>
+    <ClCompile Include="stb\stb_image_resize.cpp">
+      <Filter>소스 파일\stb</Filter>
+    </ClCompile>
+    <ClCompile Include="stb\stb_image_write.cpp">
+      <Filter>소스 파일\stb</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="glsl\shader.frag">
+      <Filter>GLSL Files</Filter>
+    </None>
+    <None Include="glsl\shader.vert">
+      <Filter>GLSL Files</Filter>
+    </None>
   </ItemGroup>
 </Project>
