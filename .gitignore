@@ -260,3 +260,7 @@ paket-files/
 # Python Tools for Visual Studio (PTVS)
 __pycache__/
 *.pyc
+
+#third_party directory is exception
+!third_party/**
+third_party/EASTL/scripts/

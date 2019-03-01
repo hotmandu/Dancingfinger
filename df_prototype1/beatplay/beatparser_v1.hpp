@@ -1,5 +1,5 @@
 #pragma once
-#include "pch.h"
+#include "../pch.h"
 #include "beatplay_core.hpp"
 #include "file_reader.hpp"
 

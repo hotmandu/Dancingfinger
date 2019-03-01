@@ -28,6 +28,24 @@
     <Filter Include="GLSL Files">
       <UniqueIdentifier>{2037ac58-af34-4995-93a8-f84fd67c3870}</UniqueIdentifier>
     </Filter>
+    <Filter Include="third_party">
+      <UniqueIdentifier>{2835909e-8761-4888-8c10-56cb6466d77b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third_party\EASTL">
+      <UniqueIdentifier>{bd2bb71a-9213-4cdf-9699-e67994051797}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\ext_bridge">
+      <UniqueIdentifier>{c24f5526-3777-4aaf-affe-605c24f78ffd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\glad">
+      <UniqueIdentifier>{cc05863b-2277-4431-ae0e-137feba1826c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\beatplay\parser">
+      <UniqueIdentifier>{5f4218e4-6625-4d56-a2e1-9d42b52a317c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\tool">
+      <UniqueIdentifier>{9d456c39-c145-4db9-bf46-a1c33616e4a9}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h">
@@ -59,9 +77,6 @@
     <ClCompile Include="program_entry.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="glad.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="beatplay\beatparser_v1.cpp">
       <Filter>소스 파일\beatplay</Filter>
     </ClCompile>
@@ -80,6 +95,9 @@
     <ClCompile Include="stb\stb_image_write.cpp">
       <Filter>소스 파일\stb</Filter>
     </ClCompile>
+    <ClCompile Include="glad\glad.cpp">
+      <Filter>소스 파일\glad</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="glsl\shader.frag">
@@ -88,5 +106,10 @@
     <None Include="glsl\shader.vert">
       <Filter>GLSL Files</Filter>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Natvis Include="..\third_party\EASTL\doc\EASTL.natvis">
+      <Filter>third_party\EASTL</Filter>
+    </Natvis>
   </ItemGroup>
 </Project>

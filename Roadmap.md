@@ -6,3 +6,6 @@
 ## Todos
 - [ ] Update third-party libraries' license
 - [ ] Uploading all
+- [ ] Make "third-party bridge" and apply to code
+- [ ] file_reader.cpp -> file_reader.cpp, tokenizer.cpp
+- [ ] beatparser_v1.cpp -> bp_v1_folderinfo.cpp, bp_v1_beatmap.cpp, bp_v1_skin.cpp, bp_v1_staticbeatmap.cpp

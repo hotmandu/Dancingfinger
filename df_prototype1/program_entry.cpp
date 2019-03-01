@@ -3,5 +3,6 @@
 
 int main()
 {
-    std::cout << SOLUTION_DIRECTORY << std::endl; 
+    std::cout << SOLUTION_DIRECTORY << std::endl;
+	return 0;
 }

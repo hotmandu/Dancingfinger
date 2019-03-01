@@ -17,6 +17,11 @@
 #include <type_traits>
 #include <string>
 
+void* __cdecl operator new[](size_t size, const char* name, int flags, unsigned debugFlags, const char* file, int line)
+{
+	return new uint8_t[size];
+}
+
 #include <EASTL/algorithm.h>
 #include <EASTL/vector.h>
 #include <EASTL/queue.h>
@@ -53,6 +58,6 @@
 #include <stb/stb_image.h>
 #include <stb/stb_image_write.h>
 #include <stb/stb_image_resize.h>
-#include <stb/stb_image_gif.h>
+//#include <stb/stb_image_gif.h>
 
 #endif //PCH_H
