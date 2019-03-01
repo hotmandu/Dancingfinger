@@ -43,7 +43,7 @@ int gl_test_A()
 
 	std::cout << "Loading Shaders" << std::endl;
 
-	GLShader shader("vertexShader.glsl", "fragmentShader.glsl");
+	GLShader shader("glsl\\shader.vert", "glsl\\shader.frag");
 
 	std::cout << "Setting up stuffs" << std::endl;
 
@@ -112,14 +112,14 @@ int gl_test_A()
 	GL_NEAREST_MIPMAP_LINEAR: linearly interpolates between the two mipmaps that most closely match the size of a pixel and samples via nearest neighbor interpolation.
 	GL_LINEAR_MIPMAP_LINEAR: linearly interpolates between the two closest mipmaps and samples the texture via linear interpolation.
 	*/
-	thelper.bindTextureEnd(0, "container.jpg", 0, GL_RGB, GL_RGB);
+	thelper.bindTextureEnd(0, "_test\\container.jpg", 0, GL_RGB, GL_RGB);
 
 	thelper.bindTextureStart(1);
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_LINEAR);
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
-	thelper.bindTextureEnd(1, "awesomeface.png", 0, GL_RGBA, GL_RGBA, true);
+	thelper.bindTextureEnd(1, "_test\\awesomeface.png", 0, GL_RGBA, GL_RGBA, true);
 
 	shader.use();
 	shader.setInt("texture1", 0);
