@@ -1,4 +1,4 @@
-﻿#ifndef PCH_H
+#ifndef PCH_H
 #define PCH_H
 
 #include <cstring>
@@ -59,5 +59,10 @@ void* __cdecl operator new[](size_t size, const char* name, int flags, unsigned 
 #include <stb/stb_image_write.h>
 #include <stb/stb_image_resize.h>
 //#include <stb/stb_image_gif.h>
+
+#include <rapidxml.hpp>
+#include <rapidxml_iterators.hpp>
+#include <rapidxml_print.hpp>
+#include <rapidxml_utils.hpp>
 
 #endif //PCH_H

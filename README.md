@@ -9,3 +9,4 @@ Just a random rhythm game only using keyboard.
 * [stb_image.h 2.19, stb_image_resize.h 0.95, stb_image_write.h 1.09](https://github.com/nothings/stb) and [std_image_gif.h](https://gist.github.com/urraka/685d9a6340b26b830d49)
 * [EASTL](https://github.com/electronicarts/EASTL)
 * [irrKlang 1.6](https://www.ambiera.com/irrklang/)
+* [RapidXML 1.13](http://rapidxml.sourceforge.net/)

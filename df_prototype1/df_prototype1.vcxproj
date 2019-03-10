@@ -91,7 +91,7 @@
       <PreprocessorDefinitions>WIN32;SOLUTION_DIRECTORY_L=LR"|($(SolutionDir))|";SOLUTION_DIRECTORY=R"|($(SolutionDir))|";_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
-      <AdditionalIncludeDirectories>$(SolutionDir)third_party/boost/include;$(SolutionDir)third_party/glad/include;$(SolutionDir)third_party/glfw/include;$(SolutionDir)third_party/glm/include;$(SolutionDir)third_party/irrKlang/include;$(SolutionDir)third_party/stb/include;$(SolutionDir)third_party/EASTL/include;$(SolutionDir)third_party/EASTL/test/packages/EAAssert/include;$(SolutionDir)third_party/EASTL/test/packages/EABase/include/Common;$(SolutionDir)third_party/EASTL/test/packages/EAMain/include;$(SolutionDir)third_party/EASTL/test/packages/EAStdC/include;$(SolutionDir)third_party/EASTL/test/packages/EATest/include;$(SolutionDir)third_party/EASTL/test/packages/EAThread/include;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)third_party/boost/include;$(SolutionDir)third_party/glad/include;$(SolutionDir)third_party/rapidxml/include;$(SolutionDir)third_party/glfw/include;$(SolutionDir)third_party/glm/include;$(SolutionDir)third_party/irrKlang/include;$(SolutionDir)third_party/stb/include;$(SolutionDir)third_party/EASTL/include;$(SolutionDir)third_party/EASTL/test/packages/EAAssert/include;$(SolutionDir)third_party/EASTL/test/packages/EABase/include/Common;$(SolutionDir)third_party/EASTL/test/packages/EAMain/include;$(SolutionDir)third_party/EASTL/test/packages/EAStdC/include;$(SolutionDir)third_party/EASTL/test/packages/EATest/include;$(SolutionDir)third_party/EASTL/test/packages/EAThread/include;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -132,7 +132,7 @@
       <PreprocessorDefinitions>WIN32;SOLUTION_DIRECTORY_L=LR"|($(SolutionDir))|";SOLUTION_DIRECTORY=R"|($(SolutionDir))|";NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
-      <AdditionalIncludeDirectories>$(SolutionDir)third_party/boost/include;$(SolutionDir)third_party/glad/include;$(SolutionDir)third_party/glfw/include;$(SolutionDir)third_party/glm/include;$(SolutionDir)third_party/irrKlang/include;$(SolutionDir)third_party/stb/include;$(SolutionDir)third_party/EASTL/include;$(SolutionDir)third_party/EASTL/test/packages/EAAssert/include;$(SolutionDir)third_party/EASTL/test/packages/EABase/include/Common;$(SolutionDir)third_party/EASTL/test/packages/EAMain/include;$(SolutionDir)third_party/EASTL/test/packages/EAStdC/include;$(SolutionDir)third_party/EASTL/test/packages/EATest/include;$(SolutionDir)third_party/EASTL/test/packages/EAThread/include;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)third_party/boost/include;$(SolutionDir)third_party/glad/include;$(SolutionDir)third_party/rapidxml/include;$(SolutionDir)third_party/glfw/include;$(SolutionDir)third_party/glm/include;$(SolutionDir)third_party/irrKlang/include;$(SolutionDir)third_party/stb/include;$(SolutionDir)third_party/EASTL/include;$(SolutionDir)third_party/EASTL/test/packages/EAAssert/include;$(SolutionDir)third_party/EASTL/test/packages/EABase/include/Common;$(SolutionDir)third_party/EASTL/test/packages/EAMain/include;$(SolutionDir)third_party/EASTL/test/packages/EAStdC/include;$(SolutionDir)third_party/EASTL/test/packages/EATest/include;$(SolutionDir)third_party/EASTL/test/packages/EAThread/include;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -199,9 +199,6 @@
   <ItemGroup>
     <None Include="glsl\shader.frag" />
     <None Include="glsl\shader.vert" />
-  </ItemGroup>
-  <ItemGroup>
-    <Natvis Include="..\third_party\EASTL\doc\EASTL.natvis" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

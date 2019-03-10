@@ -28,12 +28,6 @@
     <Filter Include="GLSL Files">
       <UniqueIdentifier>{2037ac58-af34-4995-93a8-f84fd67c3870}</UniqueIdentifier>
     </Filter>
-    <Filter Include="third_party">
-      <UniqueIdentifier>{2835909e-8761-4888-8c10-56cb6466d77b}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="third_party\EASTL">
-      <UniqueIdentifier>{bd2bb71a-9213-4cdf-9699-e67994051797}</UniqueIdentifier>
-    </Filter>
     <Filter Include="소스 파일\ext_bridge">
       <UniqueIdentifier>{c24f5526-3777-4aaf-affe-605c24f78ffd}</UniqueIdentifier>
     </Filter>
@@ -106,10 +100,5 @@
     <None Include="glsl\shader.vert">
       <Filter>GLSL Files</Filter>
     </None>
-  </ItemGroup>
-  <ItemGroup>
-    <Natvis Include="..\third_party\EASTL\doc\EASTL.natvis">
-      <Filter>third_party\EASTL</Filter>
-    </Natvis>
   </ItemGroup>
 </Project>
