@@ -1,0 +1,18 @@
+<Beatpack version="1.0">
+  
+  <Pack>
+    <Title>First love</Title>
+    <TitleUnicode>First love</TitleUnicode>
+
+    <Artist>Kaivon (feat. Pauline Herr)</Artist>
+    <ArtistUnicode>Kaivon (feat. Pauline Herr)</ArtistUnicode>
+
+    <Creator>hotmandu</Creator>
+  </Pack>
+
+  <Skin>
+    <!-- type = "color/image/video" link = "link_to_image/video" color = "background color" -->
+    <Background type="color" color="ffffff" />
+  </Skin>
+  
+</Beatpack>

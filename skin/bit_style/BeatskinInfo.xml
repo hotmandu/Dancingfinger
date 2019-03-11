@@ -1,0 +1,20 @@
+<Beatskin version="1.0">
+  <Info>
+    <Name>Bit style</Name>
+    <Creator>hotmandu</Creator>
+  </Info>
+  <InGame>
+    <ComboColor>
+      <Color idx="1">ff1616</Color>
+      <Color idx="2">16ff16</Color>
+      <Color idx="3">1616ff</Color>
+    </ComboColor>
+
+    <Layout name="MidkeyDefault"></Layout>
+    <Layout name="NumpadDefault"></Layout>
+    <Layout name="AllkeyDefault"></Layout>
+  </InGame>
+  <Menu>
+    <Song id="main_menu" link="main_menu.mp3"/>
+  </Menu>
+</Beatskin>

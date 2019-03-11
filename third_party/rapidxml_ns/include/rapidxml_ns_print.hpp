@@ -1,12 +1,12 @@
-#ifndef RAPIDXML_PRINT_HPP_INCLUDED
-#define RAPIDXML_PRINT_HPP_INCLUDED
+#ifndef RAPIDXML_NS_PRINT_HPP_INCLUDED
+#define RAPIDXML_NS_PRINT_HPP_INCLUDED
 
 // Copyright (C) 2006, 2009 Marcin Kalicinski
 // Version 1.13
 // Revision $DateTime: 2009/05/13 01:46:17 $
-//! \file rapidxml_print.hpp This file contains rapidxml printer implementation
+//! \file rapidxml_ns_print.hpp This file contains rapidxml printer implementation
 
-#include "rapidxml.hpp"
+#include "rapidxml_ns.hpp"
 
 // Only include streams if not disabled
 #ifndef RAPIDXML_NO_STREAMS
@@ -14,7 +14,7 @@
     #include <iterator>
 #endif
 
-namespace rapidxml
+namespace rapidxml_ns
 {
 
     ///////////////////////////////////////////////////////////////////////
@@ -101,7 +101,18 @@ namespace rapidxml
 
         ///////////////////////////////////////////////////////////////////////////
         // Internal printing operations
-    
+   
+        // Printing function declarations (fix for clang bug in gcc and others: http://sourceforge.net/p/rapidxml/bugs/16/)
+
+        template<class OutIt, class Ch> inline OutIt print_children(OutIt out, const xml_node<Ch> *node, int flags, int indent);
+        template<class OutIt, class Ch> inline OutIt print_element_node(OutIt out, const xml_node<Ch> *node, int flags, int indent);
+        template<class OutIt, class Ch> inline OutIt print_data_node(OutIt out, const xml_node<Ch> *node, int flags, int indent);
+        template<class OutIt, class Ch> inline OutIt print_cdata_node(OutIt out, const xml_node<Ch> *node, int flags, int indent);
+        template<class OutIt, class Ch> inline OutIt print_declaration_node(OutIt out, const xml_node<Ch> *node, int flags, int indent);
+        template<class OutIt, class Ch> inline OutIt print_comment_node(OutIt out, const xml_node<Ch> *node, int flags, int indent);
+        template<class OutIt, class Ch> inline OutIt print_doctype_node(OutIt out, const xml_node<Ch> *node, int flags, int indent);
+        template<class OutIt, class Ch> inline OutIt print_pi_node(OutIt out, const xml_node<Ch> *node, int flags, int indent);
+ 
         // Print node
         template<class OutIt, class Ch>
         inline OutIt print_node(OutIt out, const xml_node<Ch> *node, int flags, int indent)
