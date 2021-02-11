@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="소스 파일\beatplay">
+      <UniqueIdentifier>{7ffb64e4-2f0c-41af-90ad-6b880d11b736}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\beatplay">
+      <UniqueIdentifier>{2a75755f-7665-4b61-bf63-2c6fc45befb0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\_test">
+      <UniqueIdentifier>{d47b70e2-943b-4573-844d-a713db1f55b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\stb">
+      <UniqueIdentifier>{81846cde-cae5-435d-abd8-1717575a7add}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GLSL Files">
+      <UniqueIdentifier>{2037ac58-af34-4995-93a8-f84fd67c3870}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\ext_bridge">
+      <UniqueIdentifier>{c24f5526-3777-4aaf-affe-605c24f78ffd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\glad">
+      <UniqueIdentifier>{cc05863b-2277-4431-ae0e-137feba1826c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\beatplay\parser">
+      <UniqueIdentifier>{5f4218e4-6625-4d56-a2e1-9d42b52a317c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\tool">
+      <UniqueIdentifier>{9d456c39-c145-4db9-bf46-a1c33616e4a9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="beatplay\file_reader.hpp">
+      <Filter>헤더 파일\beatplay</Filter>
+    </ClInclude>
+    <ClInclude Include="beatplay\beatplay_core.hpp">
+      <Filter>헤더 파일\beatplay</Filter>
+    </ClInclude>
+    <ClInclude Include="beatplay\beatparser_v1.hpp">
+      <Filter>헤더 파일\beatplay</Filter>
+    </ClInclude>
+    <ClInclude Include="_test\glHelperA.hpp">
+      <Filter>소스 파일\_test</Filter>
+    </ClInclude>
+    <ClInclude Include="_test\console_A.hpp">
+      <Filter>소스 파일\_test</Filter>
+    </ClInclude>
+    <ClInclude Include="_test\GL_A.hpp">
+      <Filter>소스 파일\_test</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="pch.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="program_entry.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="beatplay\beatparser_v1.cpp">
+      <Filter>소스 파일\beatplay</Filter>
+    </ClCompile>
+    <ClCompile Include="beatplay\beatplay_core.cpp">
+      <Filter>소스 파일\beatplay</Filter>
+    </ClCompile>
+    <ClCompile Include="beatplay\file_reader.cpp">
+      <Filter>소스 파일\beatplay</Filter>
+    </ClCompile>
+    <ClCompile Include="stb\stb_image.cpp">
+      <Filter>소스 파일\stb</Filter>
+    </ClCompile>
+    <ClCompile Include="stb\stb_image_resize.cpp">
+      <Filter>소스 파일\stb</Filter>
+    </ClCompile>
+    <ClCompile Include="stb\stb_image_write.cpp">
+      <Filter>소스 파일\stb</Filter>
+    </ClCompile>
+    <ClCompile Include="glad\glad.cpp">
+      <Filter>소스 파일\glad</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="glsl\shader.frag">
+      <Filter>GLSL Files</Filter>
+    </None>
+    <None Include="glsl\shader.vert">
+      <Filter>GLSL Files</Filter>
+    </None>
+  </ItemGroup>
+</Project>

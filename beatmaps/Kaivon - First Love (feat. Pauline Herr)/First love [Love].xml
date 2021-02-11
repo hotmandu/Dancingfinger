@@ -1,0 +1,83 @@
+<Beatmap version="1.0">
+
+  <Map>
+    <Title>First love</Title>
+    <TitleUnicode>First love</TitleUnicode>
+
+    <Artist>Kaivon (feat. Pauline Herr)</Artist>
+    <ArtistUnicode>Kaivon (feat. Pauline Herr)</ArtistUnicode>
+
+    <Creator>hotmandu</Creator>
+    
+    <Version>Love</Version>
+    <BPM>150</BPM>
+  </Map>
+
+  <Song link="Kaivon - First love (feat. Pauline Herr).mp3" audioLeadIn="1500" />
+
+  <Difficulty>
+    <!-- Gamemode: relax/exhaust/achieve -->
+    <Gamemode>Relax</Gamemode>
+    
+    <!-- Gamekey: numpad/all/midkey -->
+    <Gamekey>midkey</Gamekey>
+    
+    <!-- 
+    need when gamemode is not relax
+    exhaust: higher ch means more hp decrease when miss
+    achieve: higher ch means more drastic decrease when miss -->
+    <ClearHardness>4</ClearHardness>
+  
+    <!-- the higher, the shorter note approaching time -->
+    <ApproachRate>4</ApproachRate>
+  
+    <!-- the higher, the more tolerance -->
+    <AccuracyTolerance>3</AccuracyTolerance>
+  
+    <!-- Slider tickrate -->
+    <SliderTickrate>1</SliderTickrate>
+  </Difficulty>
+  
+  <Skin>
+    <!-- type = "color/image/video" link = "link_to_image/video" color = "background color" -->
+    <Background type="color" color="ffffff" />
+    <!-- LayoutUse MidkeyDefault/NumpadDefault/AllkeyDefault/Custom names -->
+    <LayoutUse name="MidkeyDefault"></LayoutUse>
+  </Skin>
+
+  <PlayEvent>
+    <!-- TODO -->
+    <Highlight from="B35/sbpm" to="B50/sbpm" />
+  </PlayEvent>
+
+  <!--
+  there are two ways to express <timing>
+  1. Raw time: mm:ss.iii = minute/second/millisecond
+  2. Beat ordered time: B<beat_offset>/<beat_name>
+  from that <beat_name>, <beat_offset>-th offset
+  '_start' is a predefined beat_name for any music's start point and its offset should be 0
+  '_init' is a predefined beat_name and cannot be used for bpm start offset
+             and only useable offset is 0. B0/_init -> music_start ~ B0/_start -->
+  <Timings>
+    <Timing start="B0/_start" name="sbpm" bpm="150" div="4"/>
+  </Timings>
+
+  <Beat>
+    <Tap key="f" at="00:15.000" />
+    <Tap key="d" at="00:16.000" />
+    <Tap key="s" at="00:17.000" />
+    <Tap key="a" at="00:18.000" />
+    <Tap key="e" at="B33/sbpm" />
+  
+    <Long key="h" from="00:12.000" to="00:20.000" />
+    <Long key="t" from="00:15.000" to="00:21.000" />
+    <Long key="m" from="00:05.000" to="00:08.000" />
+    <Long key="l" from="00:20.000" to="00:25.000" />
+  </Beat>
+
+  <Debug:AfterSetup xmlns:Debug="urn:beatmap:debug">
+    <Runscript>
+@print_timing B33/sbpm
+    </Runscript>
+  </Debug:AfterSetup>
+</Beatmap>
