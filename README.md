@@ -1,7 +1,7 @@
 # Dancing Finger
 Just a random rhythm game only using keyboard.
 
-Massive ~~Online~~ Keyboard-pressing game.
+Currently discontinued.
 
 ## Libraries using
 * [Boost 1.69.0](https://www.boost.org/)
